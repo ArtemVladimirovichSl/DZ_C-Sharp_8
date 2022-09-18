@@ -23,10 +23,9 @@ void WriteArray (int[,,] array3D)
     {
         for (int j = 0; j < array3D.GetLength(1); j++)
         {
-            Console.Write($"X({i}) Y({j}) ");
             for (int k = 0; k < array3D.GetLength(2); k++) 
             {
-                Console.Write( $"Z({k})={array3D[i,j,k]}; ");
+                Console.Write( $"{array3D[i, j, k]}({i},{j},{k}) ");
             }
         Console.WriteLine();
         }
