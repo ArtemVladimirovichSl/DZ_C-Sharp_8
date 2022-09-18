@@ -1,7 +1,6 @@
 ﻿// Напишите программу, которая заполнит спирально массив 4 на 4.
 
-int side = 4;
-int[,] sqareMatrix = new int[side, side];
+int[,] sqareMatrix = new int[4, 4];
 
 int temp = 1;
 int i = 0;
@@ -28,7 +27,7 @@ void WriteArray (int[,] array)
     {
         for (int j = 0; j < array.GetLength(1); j++)
         {
-            if (array[i,j] / 10 <= 0) Console.Write($" {array[i,j]} ");
+            if (array[i,j] / 10 <= 0) Console.Write("0" + $"{array[i,j]} ");
             else Console.Write($"{array[i,j]} ");
         }
     Console.WriteLine();
